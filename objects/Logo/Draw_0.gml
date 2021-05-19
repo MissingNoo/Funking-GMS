@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_text(10,10, string(x) + ", " + string(y));
 draw_sprite_general(
 spr,0,
 logo_bumpin[now,0],
