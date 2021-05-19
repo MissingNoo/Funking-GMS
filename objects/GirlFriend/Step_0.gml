@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if sprn == "GF Dancing Beat"{
 	if now == array_length(GF_Dancing_Beat)-1 now = 0;
-	else now++
+	else now = now + 0.5
 }
 if sprn == "GF Cheer"{
 	if now == array_length(GF_Cheer)-1 now = 0;

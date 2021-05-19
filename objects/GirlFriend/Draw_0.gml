@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 switch (sprn) {
     case GF[0]:
-        draw_sprite_part(spr,0,
+        draw_sprite_general(spr,0,
 			GF_Dancing_Beat[now,0],
 			GF_Dancing_Beat[now,1],
 			GF_Dancing_Beat[now,2],
-			GF_Dancing_Beat[now,3],x,y);
+			GF_Dancing_Beat[now,3],x,y,1,1,0,c_white,c_white,c_white,c_white,1);
         break;
 	case GF[1]:
 		draw_sprite_part(spr,0,

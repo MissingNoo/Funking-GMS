@@ -7,7 +7,7 @@
   "packageId": "com.patrickgh3.derpxml",
   "productId": "AC6E6703C447FB1BF0CFD1D33198EE44",
   "author": "",
-  "date": "2021-05-19T07:02:52.2685713-07:00",
+  "date": "2021-05-19T11:02:52.2685713-03:00",
   "license": "Free to use, also for commercial games.",
   "description": "",
   "helpfile": "",

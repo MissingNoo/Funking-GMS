@@ -10,6 +10,8 @@ GF[6] = "GF left Note"
 sprn="GF Dancing Beat";
 now=0;
 
+if room_get_name(room) == "Menu"{ x= 631;  y = 120;}
+
 DerpXml_Init() //Iniciar XML
 DerpXmlRead_OpenFile(working_directory + "assets/images/GF_assets.xml"); //Carregar XML da sprite
 while DerpXmlRead_Read() {
