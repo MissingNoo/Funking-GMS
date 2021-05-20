@@ -42,14 +42,12 @@ for (var i = 0; i<sections; i++) {
 			}
 			//show_message(string(position));
 		}else break;
+	}
 }
-
-//ds_map_destroy(json_data);
-//ds_map_destroy(song);
-
+show_debug_message("deleting json data");
+ds_map_destroy(json_data);
 //ds_map_destroy(section);
 //ds_map_destroy(playernote);
 //ds_map_destroy(sectionNotes);
 snd=audio_create_stream(working_directory + "assets/music/Tutorial_Inst.ogg");
 audio_play_sound(snd,0,false);
-}
