@@ -5,10 +5,10 @@ switch (selected) {
     case 0:
 		//story
         draw_sprite_general(spr,0,
-			StoryW[now,0],
-			StoryW[now,1],
-			StoryW[now,2],
-			StoryW[now,3],x,y,1,1,0,c_white,c_white,c_white,c_white,1);
+			StoryW[noww,0],
+			StoryW[noww,1],
+			StoryW[noww,2],
+			StoryW[noww,3],x,y,1,1,0,c_white,c_white,c_white,c_white,1);
 		//Free
         draw_sprite_general(spr,0,
 			Free[now,0],
@@ -31,10 +31,10 @@ switch (selected) {
 			Story[now,3],x,y,1,1,0,c_white,c_white,c_white,c_white,1);
 		//Free
         draw_sprite_general(spr,0,
-			FreeW[now,0],
-			FreeW[now,1],
-			FreeW[now,2],
-			FreeW[now,3],x,y+100,1,1,0,c_white,c_white,c_white,c_white,1);
+			FreeW[noww,0],
+			FreeW[noww,1],
+			FreeW[noww,2],
+			FreeW[noww,3],x,y+100,1,1,0,c_white,c_white,c_white,c_white,1);
 		//story
         draw_sprite_general(spr,0,
 			Donate[now,0],
@@ -57,9 +57,9 @@ switch (selected) {
 			Free[now,3],x,y+100,1,1,0,c_white,c_white,c_white,c_white,1);
 		//story
         draw_sprite_general(spr,0,
-			DonateW[now,0],
-			DonateW[now,1],
-			DonateW[now,2],
-			DonateW[now,3],x,y+200,1,1,0,c_white,c_white,c_white,c_white,1);
+			DonateW[noww,0],
+			DonateW[noww,1],
+			DonateW[noww,2],
+			DonateW[noww,3],x,y+200,1,1,0,c_white,c_white,c_white,c_white,1);
         break;
 }

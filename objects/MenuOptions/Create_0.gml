@@ -16,6 +16,7 @@ S[5] = "donate white";
 #region Internal
 m=0;
 now=0; //index
+noww=0;
 #endregion
 
 
