@@ -4,7 +4,6 @@
     {"id":{"name":"objDerpXmlRead","path":"objects/objDerpXmlRead/objDerpXmlRead.yy",},"order":0,},
     {"id":{"name":"DerpXmlWrite_LeafElement","path":"scripts/DerpXmlWrite_LeafElement/DerpXmlWrite_LeafElement.yy",},"order":5,},
     {"id":{"name":"objDerpXmlWrite","path":"objects/objDerpXmlWrite/objDerpXmlWrite.yy",},"order":1,},
-    {"id":{"name":"Sound1","path":"sounds/Sound1/Sound1.yy",},"order":0,},
     {"id":{"name":"DerpXmlWrite_GetString","path":"scripts/DerpXmlWrite_GetString/DerpXmlWrite_GetString.yy",},"order":4,},
     {"id":{"name":"DerpXml","path":"extensions/DerpXml/DerpXml.yy",},"order":0,},
     {"id":{"name":"NotePlayerDown","path":"objects/NotePlayerDown/NotePlayerDown.yy",},"order":0,},

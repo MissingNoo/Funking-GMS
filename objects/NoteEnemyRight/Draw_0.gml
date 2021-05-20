@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite_general(spr,0,
+draw_sprite_general(NoteEnemy.spr,0,
 	arrow[now,0],
 	arrow[now,1],
 	arrow[now,2],

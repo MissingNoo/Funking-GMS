@@ -23,11 +23,7 @@ now=0; //index
 DerpXml_Init() //Iniciar XML
 DerpXmlRead_OpenFile(working_directory + "assets/images/" + xml); //Carregar XML da sprite
 while DerpXmlRead_Read() {
-	//Nome da sprite
-	if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
-		sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
-		spr = sprite_add(sprfile,0,false,false,0,0);
-	}
+
 	
 	//Pegar Frames
 	

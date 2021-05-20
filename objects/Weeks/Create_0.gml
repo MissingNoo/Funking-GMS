@@ -1,4 +1,5 @@
 /// @description 
+global.voiceneeded=0;
 ax=513;
 ay=469;
 selected=0;
