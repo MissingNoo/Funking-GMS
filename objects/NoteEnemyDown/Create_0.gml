@@ -2,7 +2,7 @@ x=39+130;
 
 xml = "NOTE_assets.xml"
 ay=644;
-spd=10
+spd=global.notespeed;
 xoffset=130
 #region sprs
 sprn="arrowDOWN"; //estado
