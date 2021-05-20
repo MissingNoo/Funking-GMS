@@ -45,9 +45,10 @@ for (var i = 0; i<sections; i++) {
 	}
 }
 show_debug_message("deleting json data");
+ds_map_destroy(playernote);
+ds_list_destroy(sectionNotes);
+ds_map_destroy(section);
+ds_list_destroy(notes);
 ds_map_destroy(json_data);
-//ds_map_destroy(section);
-//ds_map_destroy(playernote);
-//ds_map_destroy(sectionNotes);
 snd=audio_create_stream(working_directory + "assets/music/Tutorial_Inst.ogg");
 audio_play_sound(snd,0,false);
