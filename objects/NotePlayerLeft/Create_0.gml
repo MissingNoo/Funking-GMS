@@ -4,6 +4,7 @@ xml = "NOTE_assets.xml"
 ay=644;
 spd=global.notespeed;
 xoffset=130
+spr = SpritesLoader.Notes;
 #region sprs
 sprn="arrowDOWN"; //estado
 S[0] = "arrowDOWN";

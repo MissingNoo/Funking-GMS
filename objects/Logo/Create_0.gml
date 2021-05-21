@@ -1,14 +1,15 @@
 now=0;
 xs=1;
 ys=1;
+spr = SpritesLoader.sLogo
 DerpXml_Init(); //Iniciar XML
 DerpXmlRead_OpenFile(working_directory + "assets/images/logoBumpin.xml"); //Carregar XML da sprite
 while DerpXmlRead_Read() {
 	//Nome da sprite
-	if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
-		sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
-		spr = sprite_add(sprfile,0,false,false,0,0);
-	}
+	//if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
+		//sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
+		//spr = sprite_add(sprfile,0,false,false,0,0);
+	//}
 	
 	//Pegar Frames
 	//logo bumpin

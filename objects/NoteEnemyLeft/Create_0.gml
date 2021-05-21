@@ -1,5 +1,5 @@
 x=39;
-
+spr = SpritesLoader.Notes;
 xml = "NOTE_assets.xml"
 ay=644;
 spd=global.notespeed;

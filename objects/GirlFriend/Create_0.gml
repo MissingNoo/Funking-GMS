@@ -6,7 +6,7 @@ GF[3] = "GF Down Note"
 GF[4] = "GF Up Note"
 GF[5] = "GF Right Note"
 GF[6] = "GF left Note"
-
+spr = SpritesLoader.sGF;
 sprn="GF Dancing Beat";
 now=0;
 
@@ -16,10 +16,10 @@ DerpXml_Init() //Iniciar XML
 DerpXmlRead_OpenFile(working_directory + "assets/images/GF_assets.xml"); //Carregar XML da sprite
 while DerpXmlRead_Read() {
 	//Nome da sprite
-	if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
-		sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
-		spr = sprite_add(sprfile,0,false,false,0,0);
-	}
+	//if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
+		//sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
+		//spr = sprite_add(sprfile,0,false,false,0,0);
+	//}
 	
 	//Pegar Frames
 	//GF Dancing Beat

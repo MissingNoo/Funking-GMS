@@ -1,2 +1,2 @@
 /// @description 
-sprite_delete(spr);
+//sprite_delete(spr);
