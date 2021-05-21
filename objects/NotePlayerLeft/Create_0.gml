@@ -1,7 +1,7 @@
-x=500;
+x= NotesBar.xp;
 
 xml = "NOTE_assets.xml"
-ay=644;
+ay=y;
 spd=global.notespeed;
 xoffset=130
 spr = SpritesLoader.Notes;

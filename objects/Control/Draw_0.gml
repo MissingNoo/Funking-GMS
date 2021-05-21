@@ -1,3 +1,4 @@
 /// @description 
+draw_text(20,40,string(pos) + "/" + string(length) + ", " + string(percent) + "%");
 draw_text(20,10,"Speed: " + string(global.notespeed));
-draw_text(0,0,instance_number(NoteEnemyDown) + instance_number(NoteEnemyLeft) + instance_number(NoteEnemyRight) + instance_number(NoteEnemyUp));
+draw_text(20,30,"Score: " + string(score));

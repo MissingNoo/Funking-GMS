@@ -1,9 +1,8 @@
-x=39;
+x= NotesBar.xe;
 spr = SpritesLoader.Notes;
 xml = "NOTE_assets.xml"
-ay=644;
+ay=y;
 spd=global.notespeed;
-xoffset=130
 #region sprs
 sprn="arrowDOWN"; //estado
 S[0] = "arrowDOWN";

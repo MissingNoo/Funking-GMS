@@ -19,8 +19,10 @@ if keyboard_check_pressed(vk_enter){
 		global.voice = audio_create_stream(working_directory + "assets/music/Spookeez_Voices.ogg");
 	}
 	if selected == 2 { 
-		global.music="tutorial"; 
-		global.snd = audio_create_stream(working_directory + "assets/music/Tutorial_Inst.ogg");
+		global.music="dadbattle"; 
+		global.snd = audio_create_stream(working_directory + "assets/music/Dadbattle_Inst.ogg");
+		global.voiceneeded =1;
+		global.voice = audio_create_stream(working_directory + "assets/music/Dadbattle_Voices.ogg");
 	}
 	if selected == 3 { 
 		global.music="tutorial"; 
@@ -34,5 +36,8 @@ if keyboard_check_pressed(vk_enter){
 		global.music="tutorial"; 
 		global.snd = audio_create_stream(working_directory + "assets/music/Tutorial_Inst.ogg");
 	}
+	global.musiclength = audio_sound_length(global.snd);
+	show_debug_message("Music Length: " + string(global.musiclength));
+	global.first = 0; 
 	room_goto(Music);
 }

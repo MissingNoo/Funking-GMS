@@ -1,9 +1,8 @@
-x=39+130+130+130;
+x= NotesBar.xe+NotesBar.xoffset*3;
 
 xml = "NOTE_assets.xml"
-ay=644;
+ay=y;
 spd=global.notespeed;
-xoffset=130
 spr = SpritesLoader.Notes;
 #region sprs
 sprn="arrowRight"; //estado

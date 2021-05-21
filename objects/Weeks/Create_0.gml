@@ -1,4 +1,6 @@
 /// @description 
+global.voice = undefined;
+global.songposition = undefined;
 global.voiceneeded=0;
 ax=513;
 ay=469;
