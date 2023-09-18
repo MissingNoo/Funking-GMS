@@ -1,10 +1,10 @@
 now=0;
 xs=1;
 ys=1;
-spr = SpritesLoader.sLogo
+spr = SpritesLoader.sLogo;
 DerpXml_Init(); //Iniciar XML
 DerpXmlRead_OpenFile(working_directory + "assets/images/logoBumpin.xml"); //Carregar XML da sprite
-while DerpXmlRead_Read() {
+while (DerpXmlRead_Read()){
 	//Nome da sprite
 	//if DerpXmlRead_CurGetAttribute("imagePath") != undefined {
 		//sprfile = working_directory + "assets/images/" + DerpXmlRead_CurGetAttribute("imagePath");
@@ -13,14 +13,15 @@ while DerpXmlRead_Read() {
 	
 	//Pegar Frames
 	//logo bumpin
-	for (var i=0; i<=14; i++){ name = "logo bumpin"
+	for (var i=0; i<=99; i++){ 
+		name = "logo bumpin";
 		//ultimo sprite dar break
-		if DerpXmlRead_CurGetAttribute("name") == undefined { break; }
+		if (DerpXmlRead_CurGetAttribute("name") == undefined) { break; }
 		//maior e menor que 10 mudar os zeros
-		if i<10 n = name + "000";
-		if i>=10 n = name + "00";
+		if (i<10) n = name + "000";
+		if (i>=10) n = name + "00";
 		//se nome for encontrado colocar na array
-		if DerpXmlRead_CurGetAttribute("name") == n + string(i) {
+		if (DerpXmlRead_CurGetAttribute("name") == n + string(i)) {
 			logo_bumpin[i,0] = DerpXmlRead_CurGetAttribute("x"); //X
 			logo_bumpin[i,1] = DerpXmlRead_CurGetAttribute("y"); //Y
 			logo_bumpin[i,2] = DerpXmlRead_CurGetAttribute("width"); //Largura
@@ -28,4 +29,4 @@ while DerpXmlRead_Read() {
 		}		
 	}
 }
-DerpXmlRead_CloseFile()
+DerpXmlRead_CloseFile();
