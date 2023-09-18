@@ -1,16 +1,17 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "SpritesLoader",
-  "eventList": [
-    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","eventNum":2,"eventType":7,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "oDelta",
+  "tags": [],
+  "resourceType": "GMObject",
+  "eventList": [
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceVersion":"1.0","name":"","resourceType":"GMEvent","eventNum":1,"eventType":3,"isDnD":false,},
+  ],
+  "overriddenProperties": [],
   "parentObjectId": null,
   "persistent": true,
   "physicsAngularDamping": 0.1,

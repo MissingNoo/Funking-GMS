@@ -41,20 +41,20 @@ for (var i = 0; i<sections; i++) {
 			position = ds_list_find_value(note, "0");
 			dir = ds_list_find_value(note, "1");
 			if dir == 0 {
-				if playernote == 1 {instance_create_layer(x,position,"Notes",NotePlayerLeft); }
-				else instance_create_layer(x,position,"Notes",NoteEnemyLeft);
+				// if playernote == 1 {instance_create_layer(x,position,"Notes",NotePlayerLeft); }
+				// else instance_create_layer(x,position,"Notes",NoteEnemyLeft);
 			}
 			if dir == 1 {
-				if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerDown); }
-				else instance_create_layer(x,position,"Notes",NoteEnemyDown);
+				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerDown); }
+				// else instance_create_layer(x,position,"Notes",NoteEnemyDown);
 			}
 			if dir == 2 {
-				if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerUp); }
-				else instance_create_layer(x,position,"Notes",NoteEnemyUp);
+				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerUp); }
+				// else instance_create_layer(x,position,"Notes",NoteEnemyUp);
 			}
 			if dir == 3 {
-				if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerRight); }
-				else instance_create_layer(x,position,"Notes",NoteEnemyRight);
+				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerRight); }
+				// else instance_create_layer(x,position,"Notes",NoteEnemyRight);
 			}
 			ds_list_destroy(note);
 		}else break;	

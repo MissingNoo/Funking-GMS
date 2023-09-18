@@ -1,0 +1,2 @@
+NoteStep();
+NoteStepEnemy();
