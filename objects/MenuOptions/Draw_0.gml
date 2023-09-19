@@ -1,4 +1,16 @@
 /// @description Insert description here
+var _offset = 0;
+for (i = 0; i < array_length(options); i++) {
+	draw_sprite_general(spr[Sprites.mainmenu],0,
+	spr[Sprites.mainmenuSprites][i][i == selected ? 1 : 0][now[i]][0],
+	spr[Sprites.mainmenuSprites][i][i == selected ? 1 : 0][now[i]][1],
+	spr[Sprites.mainmenuSprites][i][i == selected ? 1 : 0][now[i]][2],
+	spr[Sprites.mainmenuSprites][i][i == selected ? 1 : 0][now[i]][3],
+	x,y + _offset,1,1,0,c_white,c_white,c_white,c_white,1);
+	_offset += 100;
+}
+
+
 // You can write your code in this editor
 
 // switch (selected) {

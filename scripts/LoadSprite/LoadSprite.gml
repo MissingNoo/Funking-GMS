@@ -19,10 +19,10 @@ function sprite_note_info(direction){
 	DerpXmlRead_OpenFile(working_directory + "assets/images/NOTE_assets.xml");
 	while (DerpXmlRead_Read()) {
 		if (DerpXmlRead_CurGetAttribute("name") == direction + "0000") {
-			arrow[0,0] = DerpXmlRead_CurGetAttribute("x");
-			arrow[0,1] = DerpXmlRead_CurGetAttribute("y");
-			arrow[0,2] = DerpXmlRead_CurGetAttribute("width");
-			arrow[0,3] = DerpXmlRead_CurGetAttribute("height");
+			arrow[0][0] = DerpXmlRead_CurGetAttribute("x");
+			arrow[0][1] = DerpXmlRead_CurGetAttribute("y");
+			arrow[0][2] = DerpXmlRead_CurGetAttribute("width");
+			arrow[0][3] = DerpXmlRead_CurGetAttribute("height");
 		}
 	}
 	DerpXmlRead_CloseFile();

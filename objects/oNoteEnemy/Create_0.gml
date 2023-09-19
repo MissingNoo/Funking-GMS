@@ -1,5 +1,5 @@
-x= NotesBar.xe+NotesBar.xoffset*2;
-spr = SpritesLoader.Notes;
+// x= NotesBar.xe+NotesBar.xoffset*2;
+// spr = SpritesLoader.Notes;
 xml = "NOTE_assets.xml"
 ay=y;
 spd=global.notespeed;

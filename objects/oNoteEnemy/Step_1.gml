@@ -13,7 +13,8 @@ switch(noteDir){
         _offset = 3;
         break;
 }
-x = NotesBar.xp + NotesBar.xoffset * _offset;
+// x = NotesBar.xp + NotesBar.xoffset * _offset;
+x = NotesBar.xe + NotesBar.xoffset * _offset;
 
 
 ay=y;

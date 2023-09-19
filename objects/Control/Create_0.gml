@@ -26,6 +26,10 @@ file_text_close(f);
 var json_data = json_decode(json_str);
 sections = ds_map_find_value(json_data, "sections");
 bpm = ds_map_find_value(json_data, "bpm");
+global.bpm = bpm;
+if(global.bpm == 0){
+	global.bpm = 100;
+}
 if sections == undefined sections = 63;
 var song= ds_map_find_value(json_data, "song");
 musicName = ds_map_find_value(song, "song");
@@ -37,25 +41,28 @@ for (var i = 0; i<sections; i++) {
 	//show_debug_message("secNotes: " + string(sectionNotes));
 	for (var j = 0; j<=sectionNotes; j++) {
 		var note = ds_list_find_value(sectionNotes, j);
-		if note != undefined {
+		if (note != undefined) {
 			position = ds_list_find_value(note, "0");
 			dir = ds_list_find_value(note, "1");
-			if dir == 0 {
-				// if playernote == 1 {instance_create_layer(x,position,"Notes",NotePlayerLeft); }
-				// else instance_create_layer(x,position,"Notes",NoteEnemyLeft);
+			switch (dir){
+				default:
+					dir = Sprites.noteLeft;
+					break;
+				case 0:
+					dir = Sprites.noteLeft;
+					break;
+				case 1:
+					dir = Sprites.noteDown;
+					break;
+				case 2:
+					dir = Sprites.noteUp;
+					break;
+				case 3:
+					dir = Sprites.noteRight;
+					break;
 			}
-			if dir == 1 {
-				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerDown); }
-				// else instance_create_layer(x,position,"Notes",NoteEnemyDown);
-			}
-			if dir == 2 {
-				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerUp); }
-				// else instance_create_layer(x,position,"Notes",NoteEnemyUp);
-			}
-			if dir == 3 {
-				// if playernote == 1 { instance_create_layer(x,position,"Notes",NotePlayerRight); }
-				// else instance_create_layer(x,position,"Notes",NoteEnemyRight);
-			}
+			if (playernote) {instance_create_layer(x, position, "Notes", oPlayerNote, {noteDir : dir, bpm});}
+			else {instance_create_layer(x, position, "Notes", oNoteEnemy, {noteDir : dir, bpm});}
 			ds_list_destroy(note);
 		}else break;	
 	}
